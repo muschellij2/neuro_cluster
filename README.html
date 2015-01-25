@@ -103,6 +103,22 @@ devtools::install_github(&quot;muschellij2/fslr&quot;) # up-to-date fslr package
 # devtools::install_github(&quot;stnava/ANTsR&quot;) # ANTsR - this takes a LONG time to run
 devtools::install_github(&quot;muschellij2/extrantsr&quot;) # EXTRA ANTsR functionality</code></pre>
 </div>
+<div id="matlab" class="section level2">
+<h2>MATLAB</h2>
+<p>In your <code>~/.bashrc</code>, put the command:</p>
+<pre class="bash"><code>module load matlab</code></pre>
+</div>
+<div id="dcm2nii" class="section level2">
+<h2>DCM2NII</h2>
+<p>To use <a href="https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii:MainPage#General_Usage"><code>dcm2niix</code></a>, a DICOM to NIfTI converter, put this in your <code>~/.bash_profile</code>:</p>
+<pre class="bash"><code>export PATH=${PATH}::/dexter/disk2/smart/programs/dcm2niix/console/ </code></pre>
+</div>
+<div id="freesurfer" class="section level2">
+<h2>FreeSurfer</h2>
+<p>To use <a href="http://freesurfer.net/">FreeSurfer</a>, add the following to the <code>~/.bash_profile</code>:</p>
+<pre class="bash"><code>export FREESURFER_HOME=/dexter/disk2/smart/programs/freesurfer
+source ${FREESURFER_HOME}/SetUpFreeSurfer.sh</code></pre>
+</div>
 </div>
 
 

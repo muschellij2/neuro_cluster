@@ -80,3 +80,11 @@ To use [`dcm2niix`](https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii:MainPa
 export PATH=${PATH}::/dexter/disk2/smart/programs/dcm2niix/console/ 
 ```
 
+## FreeSurfer
+
+To use [FreeSurfer](http://freesurfer.net/), add the following to the `~/.bash_profile`:
+
+```{r, engine='bash', eval=FALSE}
+export FREESURFER_HOME=/dexter/disk2/smart/programs/freesurfer
+source ${FREESURFER_HOME}/SetUpFreeSurfer.sh
+```
