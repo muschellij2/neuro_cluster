@@ -28,8 +28,26 @@ export FSLDIR PATH
 
 ## ANTsR
 
-You can install [Install ANTsR from GitHuB](http://stnava.github.io/ANTsR/), which I recommend.  But if you want to get started with ANTsR right now (and download the gitHub later), you can use the following command in `R`:
+You can install [Install ANTsR from GitHub](http://stnava.github.io/ANTsR/), which I recommend.  But if you want to get started with ANTsR right now (and download the GitHub later), you can use the following command in `R`:
 
 ```{r, eval=FALSE}
 .libPaths( c( .libPaths(), "/dexter/disk2/smart/programs/R_Packages") )
+```
+
+## AFNI
+If you would like to use commands from [AFNI (Analysis of Functional NeuroImages)](http://afni.nimh.nih.gov/afni/), then you need to add the path to AFNI to the `PATH` environmental variable.  Simply put, add this to `~/.bash_profile`:
+```{r, engine='bash', eval=FALSE}
+export PATH=${PATH}:/dexter/disk2/smart/programs/afni
+```
+
+## R packages
+
+```{r packages,eval=FALSE}
+install.packages("oro.dicom") # working with DICOM images
+install.packages("oro.nifti") # working with NIfTI objects 
+install.packages("devtools") # Getting GitHub Packages
+devtools::install_github("muschellij2/fslr") # up-to-date fslr package
+# install.packages("fslr") # Package for interfacing FSL - CRAN version
+# devtools::install_github("stnava/ANTsR") # ANTsR - this takes a LONG time to run
+devtools::install_github("muschellij2/extrantsr") # EXTRA ANTsR functionality
 ```
