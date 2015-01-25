@@ -34,6 +34,18 @@ You can install [Install ANTsR from GitHub](http://stnava.github.io/ANTsR/), whi
 .libPaths( c( .libPaths(), "/dexter/disk2/smart/programs/R_Packages") )
 ```
 
+[CMake](http://www.cmake.org/) is required for an install of ANTsR, so put this in your `~/.bash_profile`:
+
+```{r, engine='bash', eval=FALSE}
+export PATH=${PATH}:/dexter/disk2/smart/programs/cmake-2.8.12.2
+```
+and then you can install ANTsR using:
+```{r antsr,eval=FALSE}
+devtools::install_github("stnava/ANTsR") # ANTsR - this takes a LONG time to run
+```
+
+
+
 ## AFNI
 If you would like to use commands from [AFNI (Analysis of Functional NeuroImages)](http://afni.nimh.nih.gov/afni/), then you need to add the path to AFNI to the `PATH` environmental variable.  Simply put, add this to `~/.bash_profile`:
 ```{r, engine='bash', eval=FALSE}
@@ -51,3 +63,20 @@ devtools::install_github("muschellij2/fslr") # up-to-date fslr package
 # devtools::install_github("stnava/ANTsR") # ANTsR - this takes a LONG time to run
 devtools::install_github("muschellij2/extrantsr") # EXTRA ANTsR functionality
 ```
+
+## MATLAB
+
+In your `~/.bashrc`, put the command:
+
+```{r, engine='bash', eval=FALSE}
+module load matlab
+```
+
+## DCM2NII
+
+To use [`dcm2niix`](https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii:MainPage#General_Usage), a DICOM to NIfTI converter, put this in your `~/.bash_profile`:
+
+```{r, engine='bash', eval=FALSE}
+export PATH=${PATH}::/dexter/disk2/smart/programs/dcm2niix/console/ 
+```
+
