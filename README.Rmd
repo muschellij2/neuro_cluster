@@ -41,6 +41,8 @@ export PATH=${PATH}:/dexter/disk2/smart/programs/cmake-2.8.12.2
 ```
 and then you can install ANTsR using:
 ```{r antsr,eval=FALSE}
+devtools::install_github("stnava/cmaker") 
+devtools::install_github("stnava/ITKR") 
 devtools::install_github("stnava/ANTsR") # ANTsR - this takes a LONG time to run
 ```
 
