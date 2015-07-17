@@ -86,7 +86,7 @@ module load matlab
 To use [`dcm2niix`](https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii:MainPage#General_Usage), a DICOM to NIfTI converter, put this in your `~/.bash_profile`:
 
 ```{r, engine='bash', eval=FALSE}
-export PATH=${PATH}::/dexter/disk2/smart/programs/dcm2niix/console/ 
+export PATH=${PATH}:/dexter/disk2/smart/programs/dcm2niix/console/ 
 ```
 
 ## FreeSurfer
