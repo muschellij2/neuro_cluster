@@ -121,7 +121,7 @@ Projects
     - QMRI
 ```
 
-## Example ReadME
+## Example ReadME.txt
 
 ```
 Owner:
