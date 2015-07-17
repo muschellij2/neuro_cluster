@@ -97,3 +97,15 @@ To use [FreeSurfer](http://freesurfer.net/), add the following to the `~/.bash_p
 export FREESURFER_HOME=/dexter/disk2/smart/programs/freesurfer
 source ${FREESURFER_HOME}/SetUpFreeSurfer.sh
 ```
+
+
+## Example ReadME
+
+```
+Owner:
+Email:
+Source:
+Description:
+URL (if applicable):
+Users:
+```
