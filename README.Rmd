@@ -98,6 +98,28 @@ export FREESURFER_HOME=/dexter/disk2/smart/programs/freesurfer
 source ${FREESURFER_HOME}/SetUpFreeSurfer.sh
 ```
 
+# Cluster Organization
+
+## Structure of MSMRI 
+```
+Data (Organized by Source)
+    - NIH
+    - Hopkins
+
+Projects
+    - OASIS
+        - Processed_Data
+            - scripts
+        - sandbox
+            - scripts
+            - results
+        - Manuscript
+            - scripts 
+            - results
+        - ReadME.txt
+    - SuBLIME
+    - QMRI
+```
 
 ## Example ReadME
 
